@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>鼠标单击事件</title>
+<script type="text/javascript">
+function dclick()
+{
+    form1.text.value="您双击了鼠标";
+}
+function Click()
+{
+    form1.text.value="您单击了鼠标";
+}
+function down()
+{
+    form1.text.value="您按下了鼠标";
+}
+function up()
+{
+    form1.text.value="您释放了鼠标";
+}
+</script>
+</head>
+
+<body onDblclick="dclick()" onMousedown="down()" onMouseup="up()" onClick="Click()">
+<form id="form1" name="form1" method="post" action="">
+    <label>
+	<textarea name="text" cols="50" rows="3" placeholder=".........."></textarea>
+	</label>
+</form>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<script type="text/javascript">
+function sub()
+{
+    var a,price=0;
+	var dom=document.getElementById("form1");
+    for(var i=0;i<dom.fruit.length;i++)
+	{
+	    if(dom.fruit[i].checked){
+		    a=dom.fruit[i].value;
+		    price=parseInt(price)+parseInt(a);
+		}
+	}
+	alert("price:"+price);
+}
+
+</script>
+</head>
+
+<body>
+<form id="form1">
+    <input  type="checkbox" name="fruit" value="59"  />apple<br />
+	<input  type="checkbox" name="fruit" value="49"  />orange<br />
+	<input  type="checkbox" name="fruit" value="39"  />banana<br />
+	<input type="submit" onclick="sub()" />
+</form>
+</body>
+</html>
